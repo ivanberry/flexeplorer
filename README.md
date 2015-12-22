@@ -4,7 +4,7 @@
 
 在学习flex 过程中，从CSS-TRICK网站获得了一些基本的知识，作者CHRIS COYIER解析得很清楚，
 但是个人对子元素的flex属性值还是没有很明白，在文章下部分的参考中找到了一个可视化的学习
-网站，http://bennettfeely.com/flexplorer/,看了之后对flex布局有了更加深入的了解，同时，
+网站，http://bennettfeely.com/flexplorer,  看了之后对flex布局有了更加深入的了解，同时，
 觉得这个网页很是炫酷，我萌发了“抄袭”创意，挑战自己，看是否能制作成一个和它类似（相同）
 的网页，加油。
 
