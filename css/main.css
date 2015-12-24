@@ -1,8 +1,14 @@
 html {
-  height: 100vh;
+  height: 100%;
 }
 body {
-  min-height: 100%;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  border: 3px solid green;
+  min-height: 100vh;
 }
 body * {
   margin: 0;
@@ -13,6 +19,7 @@ body * {
   -moz-border: 1px solid green;
   border: 1px solid green;
   display: flex;
+  height: 100%;
 }
 .sideBar {
   position: relative;
@@ -21,6 +28,7 @@ body * {
   justify-content: flex-end;
   width: 25em;
   background-color: whitesmoke;
+  height: 100%;
 }
 .sideBar div {
   flex: 1;
@@ -30,6 +38,10 @@ body * {
   border-right: 1px solid #e1e1e1;
   overflow: hidden;
   text-align: right;
+}
+.sideBar,
+.demo {
+  min-height: 100%;
 }
 .sideBar div span,
 .sideBar div input {
@@ -58,7 +70,7 @@ body * {
 }
 .flex-container div {
   justify-content: space-around;
-  margin-right: .5em;
+  margin: .5em;
   text-align: center;
 }
 .flex-container div span {
