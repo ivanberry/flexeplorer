@@ -1,5 +1,5 @@
 html {
-  height: 100%;
+  /*height: 100vh;*/
 }
 body {
   position: absolute;
@@ -7,19 +7,21 @@ body {
   bottom: 0;
   left: 0;
   right: 0;
-  border: 3px solid green;
-  min-height: 100vh;
+  /*border: 3px solid green;*/
+  height: 100%;
+  margin: 0;
+  padding: 0;
 }
 body * {
   margin: 0;
   padding: 0;
 }
 .main {
-  -webkit-border: 1px solid green;
+  /*-webkit-border: 1px solid green;
   -moz-border: 1px solid green;
-  border: 1px solid green;
+  border: 1px solid green;*/
   display: flex;
-  height: 100%;
+  height: 85%;
 }
 .sideBar {
   position: relative;
@@ -63,7 +65,7 @@ body * {
   justify-content: flex-end;
 }
 .flex-container {
-  border: 1px solid red;
+  /*border: 1px solid red;*/
   width: 100%;
   display: flex;
   flex-flow: row wrap;
@@ -86,7 +88,7 @@ figure div {
   justify-content: center;
 }
 footer {
-  border: 1px solid green;
+  /*border: 1px solid red;*/
   background-color: #36e4ed;
 }
 footer pre {
