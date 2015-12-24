@@ -2,107 +2,94 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>Flexbox Explorer</title>
+	<title>Flexbox demo</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link href="https://cdn.bootcss.com/font-awesome/4.4.0/css/font-awesome.min.css" rel="stylesheet">
 	<link href="https://cdn.bootcss.com/semantic-ui/2.1.7/semantic.min.css" rel="stylesheet">
-	<link rel="stylesheet" href="css/prism.css"_>
 	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="css/prism.css">
+	<script src="https://cdn.bootcss.com/semantic-ui/2.1.7/semantic.min.js"></script>
+	<script src="js/prism.js"></script>
 </head>
 <body>
-<main class="main">
-	<aside id="sideBar" class="sideBar flex">
-		<hgroup class="hgroup flex">
-		<a href="http://tabgre.com/flexeplorer.com/index.html">flexeplorer</a>
-		<span class="fa fa-angle-left"></span>
-		</hgroup>
-		<menu class="controls flex">
-			<div>
-				<code>flex:
-				<label><input type="input" value="1"/></label>
-				<label><input type="input" value="1"/></label>
-				<label><input type="input" value="auto"/></label>
-			    </code>
+	<main class="main">
+		<aside id="sideBar" class="sideBar flex">
+			<hgroup class="hgroup flex">
+				<a href="http://tabgre.com/flexeplorer.com/index.html">flexeplorer</a>
+				<span class="fa fa-angle-left"></span>
+			</hgroup>
+			<menu class="controls flex">
+				<div>
+					<code>flex:
+					<label><input type="input" value="1"/></label>
+					<label><input type="input" value="1"/></label>
+					<label><input type="input" value="auto"/></label>
+				    </code>
+				</div>
+				<div>
+					<code># of flex items:
+					<span class="count-controls fa fa-plus"></span>
+					<span class="count-controls fa fa-minus"></span>
+				    </code>
+				</div>
+				<div>
+					<code>flex-direction:
+						<select id="flex-direction-control">
+							<option value="row">row</option>
+							<option value="row-reverse">row-reverse</option>
+							<option value="column">column</option>
+							<option value="column-reverse">column-reverse</option>
+					    </select>
+					</code>
+				</div>
+				<div>
+					<code>flex-wrap:
+						<select id="flex-wrap-control" name="flex-wrap-control">
+							<option value="wrap">wrap</option>
+							<option value="wrap-reverse">wrap-reverse</option>
+							<option value="nowrap">nowrap</option>
+						</select>
+					</code>
+				</div>
+				<div>
+					<code>justify-content:
+						<select id="jusity-content-control" name="justify-content-control">
+							<option value="flex-start">flex-start</option>
+							<option value="flex-end">flex-end</option>
+							<option value="center">center</option>
+							<option value="space-between">space-between</option>
+							<option value="space-around">space-around</option>
+						</select>
+					</code>
+				</div>
+				<div>
+					<code class="github">
+						<span class="fa fa-github"></span>
+						<span class="fa fa-google-plus"></span>
+					</code>
+				</div>
+		</aside>
+		<!--aside ends here-->
+		<figure id="demo" class="flex-container demo">
+			<div class="flex-item" style="background-color: hsl(396,50%,75%)"><span>Elit atque!</span></div>
+			<div class="flex-item" style="background-color: hsl(396,50%,75%)"><span>Adipisicing</span></div>
+			<div class="flex-item" style="background-color: hsl(396,50%,75%)"><span>Lorem.</span></div>
+			<div class="flex-item" style="background-color: hsl(396,50%,75%)"><span>Consectetur laudantium.</span>
 			</div>
-			<div>
-				<code># of flex items:
-				<span class="count-controls fa fa-plus" ></span>
-				<span class="count-controls fa fa-minus"></span>
-			    </code>
-			</div>
-			<div>
-				<code>flex-direction:
-					<select id="flex-direction-control">
-					<option value="row">row</option>
-					<option value="row-reverse">row-reverse</option>
-					<option value="column">column</option>
-					<option value="column-reverse">column-reverse</option>
-				    </select>
-				</code>
-			</div>
-			<div>
-				<code>flex-wrap:
-					<select id="flex-wrap-control" name="flex-wrap-control">
-						<option value="wrap">wrap</option>
-						<option value="wrap-reverse">wrap-reverse</option>
-						<option value="nowrap">nowrap</option>
-					</select>
-				</code>
-			</div>
-			<div>
-				<code>justify-content:
-					<select id="jusity-content-control" name="justify-content-control">
-						<option value="flex-start">flex-start</option>
-						<option value="flex-end">flex-end</option>
-						<option value="center">center</option>
-						<option value="space-between">space-between</option>
-						<option value="space-around">space-around</option>
-					</select>
-				</code>
-			</div>
-			<div>
-				<code class="github">
-					<span class="fa fa-github"></span>
-					<span class="fa fa-google-plus"></span>
-				</code>
-			</div>
+		</figure>
+	</main>
+	<footer class="footer flex">
+		<pre>
+			<code>
+				.container {
+					color: white;
+				}
+			</code>
+		</pre>
 	
-	</aside>
-	<!--aside ends here-->
-<figure id="demo" class="flex-container demo">
-	<div class="flex-item" style="background-color: hsl(396,50%,75%)"><span>Elit atque!</span></div>
-	<div class="flex-item" style="background-color: hsl(396,50%,75%)"><span>Adipisicing</span></div>
-	<div class="flex-item" style="background-color: hsl(396,50%,75%)"><span>Lorem.</span></div>
-	<div class="flex-item" style="background-color: hsl(396,50%,75%)"><span>Consectetur laudantium.</span></div>
-</figure>
-</main>
-<footer class="footer flex">
-	<pre class="language-css"><code>
-.container {
-	display: -webkit-flex;
-	display: flex;
-	-webkit-flex-flow:
-	row wrap; 
-	flex-flow: row wrap;
-	}
-.flex-item {
-	-webkit-flex: 1 auto;
-	flex: 1 auto;
-	}
-	</code></pre>
-
-	<div class="caniuse">
-		<h2>浏览器支持</h2>
-		<h3><a href="http://caniuse.com/#search=flex" target="blank">Can I Use Flex</a></h3>
-	
-	
-	
-	</div>
-
-
-
-</footer>
-<script src="https://cdn.bootcss.com/semantic-ui/2.1.7/semantic.min.js"></script>
-<script src="js/prism.js"></script>
+		<div class="caniuse">
+			<h2>浏览器支持</h2>
+		</div>
+	</footer>
 </body>
 </html>
