@@ -1,0 +1,49 @@
+.main-content {
+  -webkit-display: flex;
+  -moz-display: flex;
+  display: flex;
+  flex-flow: row wrap;
+  font-size: 16px;
+}
+.main-content * {
+  padding: 10px;
+  flex: 1 100%;
+  /*mobile first*/
+}
+.flex-items {
+  -webkit-display: flex;
+  -moz-display: flex;
+  display: flex;
+  flex-flow: row wrap;
+  font-size: 16px;
+  -webkit-border: 1px solid #e1ecf4;
+  -moz-border: 1px solid #e1ecf4;
+  border: 1px solid #e1ecf4;
+  background-color: #75daea;
+}
+main {
+  background-color: blue;
+}
+aside.flex-items {
+  background-color: red;
+}
+footer.flex-items {
+  background-color: green;
+}
+@media all and (min-width: 600px) {
+  aside {
+    flex: 1 auto;
+  }
+}
+@media all and (min-width: 800px) {
+  main {
+    flex: 3 0px;
+    order: 2;
+  }
+  aside {
+    order: 1;
+  }
+  footer {
+    order: 3;
+  }
+}

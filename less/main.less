@@ -1,0 +1,103 @@
+@bgColor: #36e4ed;
+@display: flex;
+@border: 1px solid green;
+@bgCode: #000;
+html {
+	//min-height: 100%;
+	height: 100vh;
+}
+body {
+	min-height: 100%;
+}
+body * {
+	margin: 0;
+	padding: 0;
+}
+
+.main {
+	-webkit-border: @border;
+	-moz-border: @border ;
+	border: @border ;
+	display: @display;
+}
+
+.sideBar {
+	position: relative;
+	z-index: 1000;
+	flex-direction: column;
+	justify-content: flex-end;
+	width: 25em;
+	background-color: whitesmoke;
+	div {
+		flex: 1;
+		padding: 1em;
+		padding-left: 0;
+		border-top: 1px solid #e1e1e1;
+		border-right: 1px solid #e1e1e1;
+		overflow: hidden;
+		text-align: right;
+	}
+	
+}
+.sideBar div span, .sideBar div input {
+	text-align: right;
+}
+.flex {
+	display: @display; //General flex
+}
+.hgroup {
+	justify-content: space-between;
+	padding: 1em;
+}
+.controls {
+	flex-direction: column;
+	flex: 1;
+	div {
+	flex: 1;
+	justify-content: flex-end;
+	}
+	
+}
+.flex-container {
+	border: 1px solid red;
+	width: 100%;
+	display: flex;
+	flex-flow: row wrap;
+	div {
+		//height: 900px;
+		justify-content: space-around;
+		margin-right: .5em;
+		text-align: center;
+		span {
+			display: inline-block;
+			align-self: center;
+		}
+
+	}
+	
+}
+.flex-item {
+	flex: 1 auto;
+}
+figure div {
+	display: inline-flex;
+	position: relative;
+	justify-content: center;
+}
+footer {
+	border: @border;
+	background-color: @bgColor;
+	pre {
+		background: @bgCode;
+		border-radius: 5px;
+		color: #fff;
+		flex: 2;
+	}
+	.caniuse {
+		flex: 1;
+		background: #777077;
+		border: 1px solid green;
+		border-radius: 5px;
+	}
+}
+

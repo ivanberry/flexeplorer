@@ -1,0 +1,22 @@
+{
+  "name": "flexeplorer",
+  "version": "0.0.0",
+  "description": "This is the flexexplorer",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/ivanberry/flexeplorer.git"
+  },
+  "keywords": [
+    "flexbox",
+    "layout"
+  ],
+  "author": "Tab",
+  "license": "BSD-2-Clause",
+  "bugs": {
+    "url": "https://github.com/ivanberry/flexeplorer/issues"
+  }
+}
