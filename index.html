@@ -19,20 +19,24 @@
 		<menu class="controls flex">
 			<div>
 				<code>flex:
-				<label><input type="input" value="1"/></label>
-				<label><input type="input" value="1"/></label>
-				<label><input type="input" value="auto"/></label>
+				<label class="ui input"><input type="text" value="1" data-content="flex-grow"/></label>
+				<label class="ui input"><input type="text" value="1"/></label>
+				<label class="ui input"><input type="text" value="auto"/></label>
 			    </code>
 			</div>
 			<div>
 				<code># of flex items:
-				<span class="count-controls fa fa-plus" ></span>
-				<span class="count-controls fa fa-minus"></span>
+				<button class="ui teal basic button tiny">
+				<i class="count-controls plus icon" style="margin-right: 0;"></i> <!--overwrite the margin to centering-->
+			    </button>
+				<button class="ui teal basic button tiny">
+				<i class="count-controls minus icon" style="margin-right: 0;"></i>
+			    </button>
 			    </code>
 			</div>
 			<div>
 				<code>flex-direction:
-					<select id="flex-direction-control">
+					<select id="flex-direction-control" class="ui dropdown selection">
 					<option value="row">row</option>
 					<option value="row-reverse">row-reverse</option>
 					<option value="column">column</option>
@@ -42,16 +46,16 @@
 			</div>
 			<div>
 				<code>flex-wrap:
-					<select id="flex-wrap-control" name="flex-wrap-control">
-						<option value="wrap">wrap</option>
-						<option value="wrap-reverse">wrap-reverse</option>
-						<option value="nowrap">nowrap</option>
+					<select id="flex-wrap-control" name="flex-wrap-control" class="ui dropdown selection compact">
+						<option value="">wrap</option>
+						<option value="1">wrap-reverse</option>
+						<option value="0">nowrap</option>
 					</select>
 				</code>
 			</div>
 			<div>
 				<code>justify-content:
-					<select id="jusity-content-control" name="justify-content-control">
+					<select id="jusity-content-control" name="justify-content-control" class="ui dropdown selection">
 						<option value="flex-start">flex-start</option>
 						<option value="flex-end">flex-end</option>
 						<option value="center">center</option>
@@ -61,11 +65,18 @@
 				</code>
 			</div>
 			<div>
-				<code class="github">
-					<span class="fa fa-github"></span>
-					<span class="fa fa-google-plus"></span>
-				</code>
+				<i class="cn flag huge"></i>
+				<button class="ui green github button">
+					<i class="github icon"></i>
+					Github
+				</button>
+				<button class="ui blue toggle button">
+					<i class="fork icon"></i>
+					Follow
+				</button>
 			</div>
+
+
 	
 	</aside>
 	<!--aside ends here-->
@@ -101,7 +112,29 @@
 
 
 
+
+	<div class="ui card small">
+		<div class="image">
+			<img src="self.png" alt="本人">
+		</div>
+		<div class="content">
+			<a class="header">Tab(郭远)</a>
+			<div class="meta">
+				<span class="date">Joined in 2015</span>
+			</div>
+			<div class="description">
+				I want to be hired.
+			</div>
+		</div>
+		<div class="extra content">
+			<a href="https://github.com/ivanberry">
+				<i class="github icon"></i>
+			</a>
+		</div>
+	</div>
+
 </footer>
+<script src="https://cdn.bootcss.com/jquery/2.1.4/jquery.js"></script>
 <script src="https://cdn.bootcss.com/semantic-ui/2.1.7/semantic.min.js"></script>
 <script src="js/prism.js"></script>
 </body>

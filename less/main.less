@@ -49,7 +49,9 @@ body {
 		input {
 			background-color: #e1e1e1;
 			border-radius: 5px;
-			padding: 5px 10px;
+		}
+		code {
+			font-size: 0.85em;
 		}
 
 	}
@@ -57,19 +59,26 @@ body {
 .count-controls {
 	
 	width: 1.8em;
-	border: 1px solid #e1e1e1;
-	background-color: #e1e1e1;
-	border-radius: 5px;
-	padding: 5px;
+	padding: 2px;
 	
 }
 .sideBar, .demo {
 	min-height: 100%;
 }
-.sideBar div span, .sideBar div input {
+.sideBar div span, .sideBar .ui input {
 	text-align: right;
 	width: 4em;
+	padding: 5px 10px;
 	text-align: center;
+	&:focus {
+		background-color: #cff7ea;
+		color: #000;
+	}
+}
+.ui.selection.dropdown {
+	padding: 0;
+	min-width:10px; 
+	
 }
 .flex {
 	display: @display; //General flex

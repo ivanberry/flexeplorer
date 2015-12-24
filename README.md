@@ -22,6 +22,7 @@ Deadline: 2016年1月10日
 <<<<<<< HEAD
     + main 部分不能充满，解决办法很简单，可以可main加一个高度，比如100vh;，另外可以给body添加绝对定位，top,bottom,left,right赋值为0.main height赋值100%,也能解决问题。
   + 基本布局完成，计划用semantic UI“装饰”控件 
+  + UI完成（细化无止尽，先放一下），接下来才是重头戏。
 =======
     + main 部分不能充满，解决办法很简单，可以可main加一个高度，比如100vh;，另外可以给body添加绝对定位，top,bottom,left,right赋值为0.main height赋值100%,也能解决问题。其实两种办法的实质是一样的。
     + 
