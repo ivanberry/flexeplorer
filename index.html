@@ -5,6 +5,8 @@
 	<title>Flexbox Explorer</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link href="https://cdn.bootcss.com/font-awesome/4.4.0/css/font-awesome.min.css" rel="stylesheet">
+	<link href="https://cdn.bootcss.com/semantic-ui/2.1.7/semantic.min.css" rel="stylesheet">
+	<link rel="stylesheet" href="css/prism.css"_>
 	<link rel="stylesheet" href="css/main.css">
 </head>
 <body>
@@ -24,7 +26,7 @@
 			</div>
 			<div>
 				<code># of flex items:
-				<span class="count-controls fa fa-plus"></span>
+				<span class="count-controls fa fa-plus" ></span>
 				<span class="count-controls fa fa-minus"></span>
 			    </code>
 			</div>
@@ -75,18 +77,23 @@
 </figure>
 </main>
 <footer class="footer flex">
-	<pre><code>
-	.container {
-	color: white;
+	<pre class="language-css"><code>
+.container {
+	display: -webkit-flex;
+	display: flex;
+	-webkit-flex-flow:
+	row wrap; 
+	flex-flow: row wrap;
 	}
-	
-	
-	
-	
+.flex-item {
+	-webkit-flex: 1 auto;
+	flex: 1 auto;
+	}
 	</code></pre>
 
 	<div class="caniuse">
 		<h2>浏览器支持</h2>
+		<h3><a href="http://caniuse.com/#search=flex" target="blank">Can I Use Flex</a></h3>
 	
 	
 	
@@ -95,5 +102,7 @@
 
 
 </footer>
+<script src="https://cdn.bootcss.com/semantic-ui/2.1.7/semantic.min.js"></script>
+<script src="js/prism.js"></script>
 </body>
 </html>
