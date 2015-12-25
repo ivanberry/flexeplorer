@@ -1,13 +1,10 @@
-html {
-  height: 100%;
-}
 body {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  min-height: 100vh;
+  /*position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	min-height: 100vh;*/
   margin: 0;
 }
 body * {
@@ -16,7 +13,7 @@ body * {
 }
 .main {
   display: flex;
-  height: 100%;
+  height: 85%;
 }
 .sideBar {
   position: relative;
@@ -115,11 +112,11 @@ footer pre {
   border-radius: 5px;
   padding: 2em;
   color: #fff;
-  flex: 2;
+  flex: 3;
   overflow: hidden;
 }
 footer .caniuse {
-  flex: 1;
+  flex: 2;
   border-radius: 5px;
   color: white;
   padding: 1em;
@@ -138,4 +135,17 @@ footer .caniuse h3:hover {
   color: red;
   transform: rotate(20deg);
   transform-origin: center;
+}
+footer .caniuse .card {
+  flex: 1;
+}
+@media all and (max-width: 600px) {
+  .footer {
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+  main aside,
+  main figure {
+    flex: 1 1 auto;
+  }
 }
