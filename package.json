@@ -21,5 +21,10 @@
   },
   "dependencies": {
     "semantic-ui": "~2.1.7"
+  },
+  "devDependencies": {
+    "jshint-stylish": "~2.1.0",
+    "jshint": "~2.9.1-rc2",
+    "gulp-jshint": "~2.0.0"
   }
 }
