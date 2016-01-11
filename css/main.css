@@ -46,6 +46,14 @@ body * {
 .sideBar .hgroup a {
   color: black;
 }
+.hgroup i.icon {
+  width:4rem;
+  height:100%;
+  padding: 1rem;
+}
+.hgroup i.icon:hover {
+  background-color: #e1e1e1;
+}
 .count-controls {
   width: 1.8em;
   padding: 2px;
@@ -66,6 +74,21 @@ body * {
   background-color: #cff7ea;
   color: #000;
 }
+.sideBar.minimized {
+  margin-left: -21rem;
+  -webkit-transition:  .3s;
+  -moz-transition:  .3s;
+  -ms-transition:  .3s;
+  -o-transition:  .3s;
+  transition:  .8s;
+}
+.sideBar.minimized menu {
+  opacity: .2;
+  transition: .8s;
+}
+.sideBar {
+  transition: .8s;
+}
 .ui.selection.dropdown {
   padding: 0;
   min-width: 10px;
@@ -75,7 +98,10 @@ body * {
 }
 .hgroup {
   justify-content: space-between;
-  padding: 1em;
+  /*padding: 1em .5em 1em 1em;*/
+}
+.hgroup a {
+  padding:1rem;
 }
 .controls {
   flex-direction: column;
@@ -100,7 +126,7 @@ body * {
   align-self: center;
 }
 .flex-item {
-  flex: 1 auto;
+  flex:  1 auto;
 }
 figure div {
   display: inline-flex;

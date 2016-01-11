@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AACA,oBAAqB;EACnB,gBAAgB,EAAE,+BAAoC",
+"sources": ["triggle.scss"],
+"names": [],
+"file": "triggle.css"
+}

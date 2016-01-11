@@ -28,3 +28,16 @@ Deadline: 2016年1月10日
 + 功能实现
   + 基本功能实现
   + 先暂停开发，着手学习原生js，接着是DOM编程和Jquery，当然最终要的是对Javascript的理解
+
+### 基本功能实现过程问题与实现(javascript)
+1, 更新classname实现方法
+    [add classname](http://stackoverflow.com/questions/195951/change-an-elements-class-with-javascript)
+    
+    实践过程中碰到问题：
+    
+    1, 提取指定元素classname后，为字符串，利用字符串方法replace()在网页内不能
+    替换指定的classname，但是在控制台却能实现，待解决。
+    2, 使用 += 的方法增加classname并绑定至某元素后，实现了基本功能，但是，多次点击
+    却会多次在原字符串上增加（这个应该就是这个样子的），需要更换更好的方法，或者
+    使用什么可以消除这个副作用？
+    3,怎么实现多次点击，实现功能的切换？

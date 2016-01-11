@@ -6,30 +6,31 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link href="https://cdn.bootcss.com/font-awesome/4.4.0/css/font-awesome.min.css" rel="stylesheet">
 	<link href="https://cdn.bootcss.com/semantic-ui/2.1.7/semantic.min.css" rel="stylesheet">
-	<link rel="stylesheet" href="css/prism.css"_>
+	<link rel="stylesheet" href="css/prism.css">
 	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="css/triggle.css">
 </head>
 <body>
 <main class="main">
 	<aside id="sideBar" class="sideBar flex">
 		<hgroup class="hgroup flex">
 		<a href="http://tabgre.com/flexeplorer.com/index.html">Flexeplorer</a> <!--href should be fix after all finish-->
-		<i class="angle double left icon big"></i>
+		<i class="angle double left icon big" id="toggle"></i>
 		</hgroup>
 		<menu class="controls flex">
 			<div>
 				<code>flex:
-				<label class="ui input"><input type="text" value="1" data-content="flex-grow"/></label>
-				<label class="ui input"><input type="text" value="1"/></label>
-				<label class="ui input"><input type="text" value="auto"/></label>
+				<label class="ui input"><input id ='flex-grow' type="text" value="1" data-content="flex-grow"/></label>
+				<label class="ui input"><input id='flex-shrink' type="text" value="1"/></label>
+				<label class="ui input"><input id='flex-basic' type="text" value="auto"/></label>
 			    </code>
 			</div>
 			<div>
 				<code># of flex items:
-				<button class="ui teal basic button tiny">
+				<button class="ui teal basic button tiny" id="count-plus">
 				<i class="count-controls plus icon" style="margin-right: 0;"></i> <!--overwrite the margin to centering-->
 			    </button>
-				<button class="ui teal basic button tiny">
+				<button class="ui teal basic button tiny" id="count-minus">
 				<i class="count-controls minus icon" style="margin-right: 0;"></i>
 			    </button>
 			    </code>
@@ -47,15 +48,15 @@
 			<div>
 				<code>flex-wrap:
 					<select id="flex-wrap-control" name="flex-wrap-control" class="ui dropdown selection compact">
-						<option value="">wrap</option>
-						<option value="1">wrap-reverse</option>
-						<option value="0">nowrap</option>
+						<option value="wrap">wrap</option>
+						<option value="wrap-reverse">wrap-reverse</option>
+						<option value="nowrap">nowrap</option>
 					</select>
 				</code>
 			</div>
 			<div>
 				<code>justify-content:
-					<select id="jusity-content-control" name="justify-content-control" class="ui dropdown selection">
+					<select id="justify-content-control" name="justify-content-control" class="ui dropdown selection">
 						<option value="flex-start">flex-start</option>
 						<option value="flex-end">flex-end</option>
 						<option value="center">center</option>
@@ -75,16 +76,18 @@
 					Follow
 				</button>
 			</div>
+		</menu>
+
 
 
 	
 	</aside>
 	<!--aside ends here-->
 <figure id="demo" class="flex-container demo">
-	<div class="flex-item" style="background-color: hsl(396,50%,75%)"><span>Elit atque!</span></div>
-	<div class="flex-item" style="background-color: hsl(396,50%,75%)"><span>Adipisicing</span></div>
-	<div class="flex-item" style="background-color: hsl(396,50%,75%)"><span>Lorem.</span></div>
-	<div class="flex-item" style="background-color: hsl(396,50%,75%)"><span>Consectetur laudantium.</span></div>
+	<div class="flex-item"><span contenteditable>Elit atque!</span></div>
+	<div class="flex-item"><span contenteditable>Adipisicing</span></div>
+	<div class="flex-item"><span contenteditable>Lorem.</span></div>
+	<div class="flex-item"><span contenteditable>Consectetur laudantium.</span></div>
 </figure>
 </main>
 <footer class="footer flex">
@@ -134,6 +137,7 @@
 	</div>
 
 </footer>
+<script src="js/custom.js"></script>
 <script src="https://cdn.bootcss.com/jquery/2.1.4/jquery.js"></script>
 <script src="https://cdn.bootcss.com/semantic-ui/2.1.7/semantic.min.js"></script>
 <script src="js/prism.js"></script>
