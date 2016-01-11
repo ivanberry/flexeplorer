@@ -84,13 +84,18 @@ var elDirection = document.getElementById('demo');
 //change the attribute 'flex' of the items
 
     //get the value of input
-var flexGrow = document.getElementById('flex-grow');
-var usrGrow = flexGrow.value;
+var flex1Grow = document.getElementById('flex-grow');
 function elGrowChange () {
-    elDirection.style.flexGrow = usrGrow;
+    var usrGrow = flex1Grow.value;
+    var el = document.querySelectorAll('div.flex-item');
+    var i, len = el.length;
+    for ( i = 0; i < len; i++) {
+        el[i].style.flexGrow = usrGrow;
+    }
+
 }
 
-flexGrow.addEventListener('input', elGrowChange, false);
+flex1Grow.oninput = elGrowChange;
 
 
 //change the attribute 'flex-direciton' of the 'demo' element
