@@ -169,6 +169,10 @@ footer .caniuse h3:hover {
 footer .caniuse .card {
   flex: 1;
 }
+.button a.github, .button a.fork {
+    color: white;
+    text-decorantion: none;
+}
 @media all and (max-width: 600px) {
   .footer {
     flex-wrap: wrap;
